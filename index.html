@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Structure Tech Solutions</title>
+
+   <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+
+   <style>
+      /* Basic styling for the WhatsApp button */
+      .whatsapp-btn {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          z-index: 999;
+          background-color: #25D366;
+          color: #fff;
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          text-align: center;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 24px;
+          text-decoration: none;
+          transition: transform 0.3s ease;
+      }
+      .whatsapp-btn i {
+          margin-right: 0;
+      }
+      .whatsapp-btn:hover {
+          transform: scale(1.1);
+      }
+      /* Optional: Styles for the chat popup */
+      .whatsapp-popup {
+          position: fixed;
+          bottom: 100px;
+          right: 30px;
+          background-color: #25D366;
+          color: #fff;
+          padding: 10px 20px;
+          border-radius: 10px;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+          display: none;
+          z-index: 998; /* Lower than whatsapp-btn to ensure button is clickable */
+      }
+      .whatsapp-popup.show {
+          display: block;
+      }
+      .whatsapp-popup a {
+          color: #fff;
+          text-decoration: none;
+      }
+  </style>
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<header class="header">
+
+   <a href="#" class="logo">Structure<span>Tech</span></a>
+
+   <nav class="navbar">
+      <a href="#home">home</a>
+      <a href="#about">about</a>
+      <a href="#services">services</a>
+      <a href="#projects">projects</a>
+      <a href="#pricing">pricing</a>
+      <a href="#contact">contact</a>
+      <a href="#blogs">blogs</a>
+   </nav>
+
+   <div class="icons">
+      <div id="menu-btn" class="fas fa-bars"></div>
+      <div id="info-btn" class="fas fa-info-circle"></div>
+      <div id="search-btn" class="fas fa-search"></div>
+      <div id="login-btn" class="fas fa-user"></div>
+   </div>
+
+   <form action="" class="search-form">
+      <input type="search" name="" placeholder="search here..." id="search-box">
+      <label for="search-box" class="fas fa-search"></label>
+   </form>
+
+   <form action="" class="login-form">
+      <h3>login form</h3>
+      <input type="email" placeholder="enter your email" class="box">
+      <input type="password" placeholder="enter your password" class="box">
+      <div class="flex">
+         <input type="checkbox" name="" id="remember-me">
+         <label for="remember-me">remember me</label>
+         <a href="#">forgot password?</a>
+      </div>
+      <input type="submit" value="login now" class="btn">
+      <p>don't have an account <a href="#">create one!</a></p>
+   </form>
+
+</header>
+
+<div class="contact-info">
+
+   <div id="close-contact-info" class="fas fa-times"></div>
+
+   <div class="info">
+      <i class="fas fa-phone"></i>
+      <h3>phone number</h3>
+      <p>+92307-5555-264</p>
+      <p>+92333-7077-007</p>
+   </div>
+
+   <div class="info">
+      <i class="fas fa-envelope"></i>
+      <h3>email address</h3>
+      <p>fahimnawaz23@gmail.com</p>
+      <p>ousamakhan812@gmail.com</p>
+   </div>
+
+   <div class="info">
+      <i class="fas fa-map-marker-alt"></i>
+      <h3>office address</h3>
+      <p>Office # 2, 2nd Floor, Masco Plaza Jinnah Avenue Blue, Islamabad</p>
+   </div>
+
+   <div class="share">
+      <a href="#" class="fab fa-facebook-f"></a>
+      <a href="#" class="fab fa-twitter"></a>
+      <a href="#" class="fab fa-instagram"></a>
+      <a href="#" class="fab fa-linkedin"></a>
+   </div>
+
+</div>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+   <div class="swiper home-slider">
+
+      <div class="swiper-wrapper">
+
+         <section class="swiper-slide slide" style="background: url(images/page-title-bg.jpg) no-repeat;">
+            <div class="content">
+               <h3>Innovative solutions for all your construction needs</h3>
+               <p>Structure Tech Solutions is a premier construction company specializing in infrastructure, commercial and residential buildings, bridges, highways, and renovations.</p>
+               <a href="#about" class="btn">get started</a>
+            </div>
+         </section>
+
+         <section class="swiper-slide slide" style="background: url(images/home-slide-2.jpg) no-repeat;">
+            <div class="content">
+               <h3>making dream come to life</h3>
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur beatae iusto pariatur laborum magnam eos!</p>
+               <a href="#about" class="btn">get started</a>
+            </div>
+         </section>
+
+         <section class="swiper-slide slide" style="background: url(images/home-slide-3.jpg) no-repeat;">
+            <div class="content">
+               <h3>from concept to creation</h3>
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur beatae iusto pariatur laborum magnam eos!</p>
+               <a href="#about" class="btn">get started</a>
+            </div>
+         </section>
+
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+   </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+   <h1 class="heading"> about us </h1>
+
+   <div class="row">
+
+      <div class="video">
+         <video src="images/about-vid.mp4" loop muted autoplay></video>
+      </div>
+
+      <div class="content">
+         <h3>We will provide you the best work which you dreamt for!</h3>
+         <p>We deliver bespoke, high-caliber solutions using advanced construction techniques and industry-leading practices. Our projects ensure safety, sustainability, and unparalleled customer satisfaction, establishing us as a distinguished industry partner.</p>
+         <a href="#services" class="btn">read more</a>
+      </div>
+
+   </div>
+
+   <div class="box-container">
+
+      <div class="box">
+         <h3>03+</h3>
+         <p>years of experience</p>
+      </div>
+
+      <div class="box">
+         <h3>10+</h3>
+         <p>project completed</p>
+      </div>
+
+      <div class="box">
+         <h3>10+</h3>
+         <p>satiesfied clients</p>
+      </div>
+
+      <div class="box">
+         <h3>45+</h3>
+         <p>active workers</p>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+   <h1 class="heading"> our services </h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="images/service-1.png" alt="">
+         <h3>Building Construction</h3>
+         <p>We handle building construction from design to completion, ensuring top safety, and customer satisfaction.</p>
+      </div>
+
+      <div class="box">
+         <img src="images/service-2.png" alt="">
+         <h3>Infrastructure</h3>
+         <p>We specialize in road infrastructure development, ensuring efficient, durable, and safe transportation networks.</p>
+      </div>
+
+      <div class="box">
+         <img src="images/service-3.png" alt="">
+         <h3>Architechture Design</h3>
+         <p>Specializing in pioneering architectural design, balancing functionality with aesthetic appeal.</p>
+      </div>
+
+      <div class="box">
+         <img src="images/service-4.png" alt="">
+         <h3>Material Supply</h3>
+         <p>Providing comprehensive material supply services, ensuring quality and efficiency in construction projects.</p>
+      </div>
+
+      <div class="box">
+         <img src="images/service-5.png" alt="">
+         <h3>Construction Consultant</h3>
+         <p>Offering expert construction consulting services to optimize project efficiency and ensure quality outcomes.</p>
+      </div>
+
+      <div class="box">
+         <img src="images/service-6.png" alt="">
+         <h3>Interior Design</h3>
+         <p>Crafting captivating interior designs that enhance spaces with style and functionality and aesthetic appeal through innovative engineering principles.</p>
+      </div>
+
+      <div class="box">
+         <img src="images/service-7.png" alt="">
+         <h3>Building Maintenance</h3>
+         <p>Providing meticulous building maintenance services to uphold safety and functionality standards.</p>
+      </div>
+
+      <div class="box">
+         <img src="images/service-8.png" alt="">
+         <h3>Building Renovation</h3>
+         <p>We provide building renovations to upgrade with enhanced functionality and contemporary aesthetics, leveraging advanced engineering techniques.</p>
+      </div>
+      
+   </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- projects section starts  -->
+
+<section class="projects" id="projects">
+
+   <h1 class="heading"> Our Projects </h1>
+
+   <div class="box-container">
+
+      <a href="images/IMG-20240609-WA0064.jpg" class="box">
+         <div class="image">
+            <img src="images/IMG-20240609-WA0064.jpg" alt="">
+         </div>
+         <div class="content">
+            <div class="info">
+               <h3>Parkview City</h3>
+               <p>Lake Slope Wall, Construction</p>
+            </div>
+            <i class="fas fa-plus"></i>
+         </div>
+      </a>
+
+      <a href="images/IMG-20240609-WA0062.jpg" class="box">
+         <div class="image">
+            <img src="images/IMG-20240609-WA0062.jpg" alt="">
+         </div>
+         <div class="content">
+            <div class="info">
+               <h3>Parkview City</h3>
+               <p>Water Tank, Construction</p>
+            </div>
+            <i class="fas fa-plus"></i>
+         </div>
+      </a>
+
+      <a href="images/IMG_20240609_16393736.jpeg" class="box">
+         <div class="image">
+            <img src="images/IMG_20240609_16393736.jpeg" alt="">
+         </div>
+         <div class="content">
+            <div class="info">
+               <h3>Parkview City</h3>
+               <p>Excavation, Construction</p>
+            </div>
+            <i class="fas fa-plus"></i>
+         </div>
+      </a>
+
+      <a href="images/IMG-20240609-WA0076.jpg" class="box">
+         <div class="image">
+            <img src="images/IMG-20240609-WA0076.jpg" alt="">
+         </div>
+         <div class="content">
+            <div class="info">
+               <h3>F11-Markaz</h3>
+               <p>Olympus Mall, Design</p>
+            </div>
+            <i class="fas fa-plus"></i>
+         </div>
+      </a>
+
+      <a href="images/IMG-20240609-WA0074.jpg" class="box">
+         <div class="image">
+            <img src="images/IMG-20240609-WA0074.jpg" alt="">
+         </div>
+         <div class="content">
+            <div class="info">
+               <h3>F-11 Markaz</h3>
+               <p>Olympus Mall, Design</p>
+            </div>
+            <i class="fas fa-plus"></i>
+         </div>
+      </a>
+
+      <a href="images/IMG-20240609-WA0033.jpg" class="box">
+         <div class="image">
+            <img src="images/IMG-20240609-WA0033.jpg" alt="">
+         </div>
+         <div class="content">
+            <div class="info">
+               <h3>G-8/2 Markaz</h3>
+               <p>House Construction</p>
+            </div>
+            <i class="fas fa-plus"></i>
+         </div>
+      </a>
+
+      <a href="images/IMG-20240609-WA0059.jpg" class="box">
+         <div class="image">
+            <img src="images/IMG-20240609-WA0059.jpg" alt="">
+         </div>
+         <div class="content">
+            <div class="info">
+               <h3>Parkview City</h3>
+               <p>House Construction</p>
+            </div>
+            <i class="fas fa-plus"></i>
+         </div>
+      </a>
+
+      <a href="images/IMG-20240609-WA0067.jpg" class="box">
+         <div class="image">
+            <img src="images/IMG-20240609-WA0067.jpg" alt="">
+         </div>
+         <div class="content">
+            <div class="info">
+               <h3>Parkview City</h3>
+               <p>Construction Slope Wall</p>
+            </div>
+            <i class="fas fa-plus"></i>
+         </div>
+      </a>
+
+      <a href="images/IMG-20240609-WA0069.jpg" class="box">
+         <div class="image">
+            <img src="images/IMG-20240609-WA0069.jpg" alt="">
+         </div>
+         <div class="content">
+            <div class="info">
+               <h3>Parkview City</h3>
+               <p>Street Construction</p>
+            </div>
+            <i class="fas fa-plus"></i>
+         </div>
+      </a>
+
+      <a href="images/IMG-20240609-WA0051.jpg" class="box">
+         <div class="image">
+            <img src="images/IMG-20240609-WA0051.jpg" alt="">
+         </div>
+         <div class="content">
+            <div class="info">
+               <h3>Parkview City</h3>
+               <p>Finishing Design</p>
+            </div>
+            <i class="fas fa-plus"></i>
+         </div>
+      </a>
+
+      <a href="images/IMG-20240609-WA0053.jpg" class="box">
+         <div class="image">
+            <img src="images/IMG-20240609-WA0053.jpg" alt="">
+         </div>
+         <div class="content">
+            <div class="info">
+               <h3>F-11 Markz</h3>
+               <p>Olympus 3D-Design</p>
+            </div>
+            <i class="fas fa-plus"></i>
+         </div>
+      </a>
+
+      <a href="images/IMG-20240609-WA0070.jpg" class="box">
+         <div class="image">
+            <img src="images/IMG-20240609-WA0070.jpg" alt="">
+         </div>
+         <div class="content">
+            <div class="info">
+               <h3>F-11 Markz</h3>
+               <p>Olympus 3D-Design</p>
+            </div>
+            <i class="fas fa-plus"></i>
+         </div>
+      </a>
+
+   </div>
+
+</section>
+
+<!-- projects section ends -->
+
+<!-- reviews section starts  -->
+
+<section class="reviews">
+
+   <h1 class="heading"> clients reviews </h1>
+
+   <div class="swiper reviews-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="swiper-slide slide">
+            <p>“We have nothing but great things to say about Structure Tech Solutions. Structure Tech Solutions did a top notch renovation and new construction on our home. We love it and are very pleased with the results! We will definitely call them again for our next Project!”</p>
+            <div class="user">
+               <img src="images/images.jpeg" alt="">
+               <div class="info">
+                  <h3>Parkview City</h3>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <p>“Structure Tech Solutions performed very professionally with great communication and excellent onsite project management. They earned our confidence during the upgrade project at our project. We will definitely call them again for our next Project!”</p>
+            <div class="user">
+               <img src="images/ag-643-logo1736954955.png" alt="">
+               <div class="info">
+                  <h3>Faisal Estate and Builder</h3>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <p>“We have nothing but great things to say about Structure Tech Solutions. Structure Tech Solutions did a top notch renovation and new construction on our home. We love it and are very pleased with the results! We will definitely call them again for our next Project!”</p>
+            <div class="user">
+               <img src="images/logo.png" alt="">
+               <div class="info">
+                  <h3>C&W Department</h3>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- reviews section ends -->
+
+<!-- pricing section starts  -->
+
+<section class="pricing" id="pricing">
+
+   <h1 class="heading"> our pricing </h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <i class="fas fa-home"></i>
+         <h3>basic plan</h3>
+         <div class="price"><span>$</span>250<span>/mo</span></div>
+         <div class="list">
+            <p>interior design</p>
+            <p>refurbishment</p>
+            <p>material supply</p>
+            <p>maintenance</p>
+            <p>24/7 support</p>
+         </div>
+         <a href="#" class="btn">choose plan</a>
+      </div>
+
+      <div class="box">
+         <i class="fas fa-building"></i>
+         <h3>premium plan</h3>
+         <div class="price"><span>$</span>650<span>/mo</span></div>
+         <div class="list">
+            <p>interior design</p>
+            <p>refurbishment</p>
+            <p>material supply</p>
+            <p>maintenance</p>
+            <p>24/7 support</p>
+         </div>
+         <a href="#" class="btn">choose plan</a>
+      </div>
+
+      <div class="box">
+         <i class="fas fa-city"></i>
+         <h3>ultimate plan</h3>
+         <div class="price"><span>$</span>1250<span>/mo</span></div>
+         <div class="list">
+            <p>interior design</p>
+            <p>refurbishment</p>
+            <p>material supply</p>
+            <p>maintenance</p>
+            <p>24/7 support</p>
+         </div>
+         <a href="#" class="btn">choose plan</a>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- pricing section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+   <h1 class="heading"> contact us </h1>
+
+   <div class="row">
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d53115.571846472754!2d73.07387125477565!3d33.69022978060812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x38dfbf80ea2ad6b5%3A0x969a03a1b5cc0bf!2sMoscow%20plaza%2C%2064w%20Jinnah%20Ave%2C%20Block%20H%20G%207%2F2%20Blue%20Area%2C%20Islamabad%2C%20Islamabad%20Capital%20Territory%2C%20Pakistan!3m2!1d33.7118859!2d73.06078029999999!5e0!3m2!1sen!2s!4v1717936861554!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      <form action="">
+         <h3>get in touch</h3>
+         <input type="text" placeholder="name" class="box">
+         <input type="email" placeholder="email" class="box">
+         <input type="number" placeholder="phone" class="box">
+         <textarea name="" placeholder="message" class="box" id="" cols="30" rows="10"></textarea>
+         <input type="submit" value="send message" class="btn">
+      </form>
+
+   </div>
+
+</section>
+
+<!-- contact section ends -->
+
+<!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+   <h1 class="heading"> our blogs </h1>
+
+   <div class="swiper blogs-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="images/blog-1.jpg" alt="">
+            </div>
+            <div class="content">
+               <h3>blog title goes here</h3>
+               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, nobis!</p>
+               <a href="#" class="btn">read more</a>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="images/blog-2.jpg" alt="">
+            </div>
+            <div class="content">
+               <h3>blog title goes here</h3>
+               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, nobis!</p>
+               <a href="#" class="btn">read more</a>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="images/blog-3.jpg" alt="">
+            </div>
+            <div class="content">
+               <h3>blog title goes here</h3>
+               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, nobis!</p>
+               <a href="#" class="btn">read more</a>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="images/blog-4.jpg" alt="">
+            </div>
+            <div class="content">
+               <h3>blog title goes here</h3>
+               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, nobis!</p>
+               <a href="#" class="btn">read more</a>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="images/blog-5.jpg" alt="">
+            </div>
+            <div class="content">
+               <h3>blog title goes here</h3>
+               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, nobis!</p>
+               <a href="#" class="btn">read more</a>
+            </div>
+         </div>
+         
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="images/blog-6.jpg" alt="">
+            </div>
+            <div class="content">
+               <h3>blog title goes here</h3>
+               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, nobis!</p>
+               <a href="#" class="btn">read more</a>
+            </div>
+         </div>
+
+      </div>
+
+   </div>
+
+</section>
+
+<!-- blogs section ends -->
+
+
+
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+   <div class="links">
+      <a class="btn" href="#home">home</a>
+      <a class="btn" href="#about">about</a>
+      <a class="btn" href="#services">services</a>
+      <a class="btn" href="#projects">projects</a>
+      <a class="btn" href="#pricing">pricing</a>
+      <a class="btn" href="#contact">contact</a>
+      <a class="btn" href="#blogs">blogs</a>
+   </div>
+
+   <div class="credit"> © 2024 All Rights Reserved. </div>
+
+</section>
+
+<!-- footer section ends -->
+
+<a href="https://wa.me/923075555264" class="whatsapp-btn" id="whatsapp-btn">
+   <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- WhatsApp popup -->
+<div class="whatsapp-popup" id="whatsapp-popup">
+   <p>Chat with us on WhatsApp:</p>
+   <a href="https://wa.me/923075555264"></a>
+</div>
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+<script>
+
+lightGallery(document.querySelector('.projects .box-container'));
+
+</script>
+
+</body>
+</html>
